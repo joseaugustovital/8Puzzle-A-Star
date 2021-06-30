@@ -29,23 +29,23 @@
  O desenvolvimento foi com base em 4 modelos matemáticos:
  
 # 1) Heurísticas
-## **1A) Heurística 1 - Número de Peças Fora do Lugar**
+## **A) Heurística 1 - Número de Peças Fora do Lugar**
 Método que utiliza a quantidade de posições erradas em relação ao goal, ou seja, conta quantas peças estão na posição errada quando comparado com o estado resolução do problema. Essa função retorna a quantidade de elementos estão fora da sua posição correta.
 
-## **1B) Heurística 2 - Distância de Manhattan**
+## **B) Heurística 2 - Distância de Manhattan**
 A distância de Manhattan (“City Block” ou “Geometria do Táxi”) é um modelo geométrico em que a distância entre dois pontos é a soma das diferenças absolutas de suas coordenadas. Essa função retorna a distância da posição atual até a posição correta com base na métrica da Distância de Manhattan.
 
 ![image](https://user-images.githubusercontent.com/75955255/123881250-4f6b4180-d912-11eb-9587-4ac74065d742.png)
 
 # 2) Buscas 
-## **2A) Hill Climbing**
+## **A) Hill Climbing**
 O método usa como parâmetro de resolução do puzze a função heurística (Heurística 1 ou 2) chamada de h(n).
 
 f(n) = h1(n)
 
 f(n) = h2(n)
 
-## **2B) A-Star**
+## **B) A-Star**
 O método usa como parâmetros de resolução do puzzle as funções h(n), e uma função g(n) que retorna o custo de determinado estado até o nó n.
 
 f(n) = h1(n) + g(n)
